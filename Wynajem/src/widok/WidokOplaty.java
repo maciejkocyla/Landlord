@@ -1,6 +1,5 @@
 package widok;
 
-import java.util.Observer;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 
@@ -20,8 +19,8 @@ import javax.swing.DefaultComboBoxModel;
 
 import model.TableModelOplaty;
 
-public class WidokOplaty extends javax.swing.JPanel// implements Observer{
-{
+public class WidokOplaty extends javax.swing.JPanel{
+
 	//Tutaj stale dla GridBagLayout
 	final static boolean shouldFill = true;
 	final static boolean shouldWeightX = true;

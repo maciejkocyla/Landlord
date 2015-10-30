@@ -15,6 +15,7 @@ public class OknoGlowne extends JFrame implements Observer{
 	JTabbedPane cards;
 	WidokMieszkania widokMieszkania;
 	WidokOplaty widokOplaty;
+	WidokNajemne widokNajemne;
 	
 	public OknoGlowne()
 	{
@@ -30,8 +31,11 @@ public class OknoGlowne extends JFrame implements Observer{
 		
 		widokMieszkania = new WidokMieszkania();
 		widokOplaty = new WidokOplaty();
+		widokNajemne = new WidokNajemne();
+		
 		cards.addTab("Mieszkania", null, widokMieszkania, "Wyswietl, dodaj, edytuj mieszkania");
 		cards.addTab("Oplaty", null, widokOplaty, "Wyswietl, dodaj, edytuj, archiwizuj oplaty");
+		cards.addTab("Najemne", null, widokNajemne, "Wyswietl, dodaj, edytuj, archiwizuj najemne");
 		
 		add(WidokGlowny);
 		
